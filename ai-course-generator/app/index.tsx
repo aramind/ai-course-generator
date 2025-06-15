@@ -29,19 +29,21 @@ export default function Index() {
         <Text
           style={{
             fontSize: 30,
-            fontWeight: "bold",
+
             textAlign: "center",
             color: Colors.WHITE,
+            fontFamily: "outfit-bold",
           }}
         >
           Welcome to Coaching Guru
         </Text>
         <Text
           style={{
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold",
             textAlign: "center",
             color: Colors.WHITE,
+            fontFamily: "outfit",
           }}
         >
           Transform your ideas into engaging educational content, effortlessly
@@ -81,5 +83,6 @@ const styles = StyleSheet.create({
   buttonText: {
     textAlign: "center",
     fontSize: 18,
+    fontFamily: "outfit",
   },
 });

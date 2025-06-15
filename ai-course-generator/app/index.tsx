@@ -1,5 +1,5 @@
 import Colors from "@/constants/Colors";
-import { Image, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -47,7 +47,39 @@ export default function Index() {
           Transform your ideas into engaging educational content, effortlessly
           with AI!
         </Text>
+        <View style={styles.button}>
+          <Text style={[styles.buttonText, { color: Colors.PRIMARY }]}>
+            Get Started
+          </Text>
+        </View>
+        <View
+          style={[
+            styles.button,
+            {
+              backgroundColor: Colors.PRIMARY,
+              borderWidth: 1,
+              borderColor: Colors.WHITE,
+            },
+          ]}
+        >
+          <Text style={[styles.buttonText, { color: Colors.WHITE }]}>
+            Already have an account
+          </Text>
+        </View>
       </View>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  button: {
+    padding: 15,
+    backgroundColor: Colors.WHITE,
+    marginTop: 20,
+    borderRadius: 10,
+  },
+  buttonText: {
+    textAlign: "center",
+    fontSize: 18,
+  },
+});
